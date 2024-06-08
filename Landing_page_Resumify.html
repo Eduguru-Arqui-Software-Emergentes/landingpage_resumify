@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUMIFY - Optimiza tu Aprendizaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #4D94FF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav img {
+            width: 50px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            width: 150px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        footer .social-icons a:hover {
+            text-decoration: underline;
+        }
+        .product-logo {
+            width: 100px;
+            margin: 20px auto;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .team-member {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RESUMIFY</h1>
+        <p>Optimiza tu Aprendizaje</p>
+    </header>
+
+    <nav>
+        <img src="logo.png" alt="Logo de RESUMIFY" id="logo">
+        <ul>
+            <li><a href="#product">Presentación del Producto</a></li>
+            <li><a href="#mission">Visión y Misión</a></li>
+            <li><a href="#team">Quiénes Somos</a></li>
+            <li><a href="#app" id="app-link">App</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Presentación del Producto -->
+    <section class="section" id="product">
+        <h2>Presentación del Producto</h2>
+        <img src="product-logo.png" alt="Logo del Producto" class="product-logo">
+        <p>RESUMIFY es una aplicación innovadora diseñada para mejorar la experiencia de aprendizaje de los estudiantes. Permite enviar enlaces de videos educativos de YouTube y recibir un resumen automático en formato PDF, optimizando el tiempo de estudio y mejorando la comprensión de los temas tratados.</p>
+    </section>
+
+    <!-- Sección de Misión y Visión -->
+    <section class="section" id="mission">
+        <h2>Misión y Visión</h2>
+        <h3>Misión</h3>
+        <p>Facilitar el acceso a recursos educativos de calidad y mejorar la experiencia de aprendizaje de los estudiantes al ofrecer soluciones innovadoras que optimicen su tiempo y comprensión.</p>
+        <h3>Visión</h3>
+        <p>Convertirnos en el aliado indispensable de estudiantes de todo el mundo, proporcionando herramientas tecnológicas que promuevan el éxito académico y contribuyan al desarrollo continuo de habilidades y conocimientos.</p>
+    </section>
+
+    <!-- Sección de Quiénes Somos -->
+    <section class="section" id="team">
+        <h2>Quiénes Somos</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="foto1.jpg" alt="Integrante 1">
+                <p>Oscar Enrique Palomino Medina</p>
+            </div>
+            <div class="team-member">
+                <img src="foto2.jpg" alt="Integrante 2">
+                <p>Juan Pablo Palacios Torres </p>
+            </div>
+            <div class="team-member">
+                <img src="foto3.jpg" alt="Integrante 3">
+                <p>Victor Fajardo</p>
+            </div>
+            <div class="team-member">
+                <img src="foto4.jpg" alt="Integrante 4">
+                <p>Josty Gerardo Tafur Gonzales</p>
+            </div>
+            <div class="team-member">
+                <img src="foto5.jpg" alt="Integrante 5">
+                <p>Josmar Vela Sarazú</p>
+            </div>
+            <div class="team-member">
+                <img src="foto6.jpg" alt="Integrante 6">
+                <p>Agustin Sanchez Maita </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>Contacta con nosotros:</p>
+        <p>Email: contacto@resumify.com | Teléfono: +123 456 7890</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('app-link').setAttribute('href', 'https://your-app-link.com');
+    </script>
+</body>
+</html>
